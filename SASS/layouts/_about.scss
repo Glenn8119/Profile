@@ -1,0 +1,52 @@
+.intro {
+
+  background-color: rgba(0, 0, 0, 0.774);
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__heading{
+    animation: moveToRight .5s ease-out;
+    &.heading{
+      color:$color-secondary;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width:60%;
+    margin-top:2rem;
+
+    animation: moveToLeft .5s ease-out .5s;
+    animation-fill-mode: backwards;
+
+    &--img {
+      display: block;
+      height: 20rem;
+      width: 20rem;
+      border-radius: 100rem;
+      filter: brightness(1.1);
+      border: 0.4rem solid $color-secondary-dark;
+      margin-right: 5rem;
+    }
+
+    &--text {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $color-secondary-light;
+
+      p {
+        font-size: 4rem;
+        color: $color-secondary-light;
+        font-weight: bold;
+      }
+    }
+  }
+}

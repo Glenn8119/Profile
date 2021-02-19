@@ -1,0 +1,10 @@
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# dependencies
+/node_modules
+
+style.comp.css
+style.prefix.css

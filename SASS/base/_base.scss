@@ -1,0 +1,39 @@
+//COLOR VARIABLE
+$color-primary:rgb(0, 154, 250);
+$color-primary-light:rgba(135, 217, 240, 0.842);
+$color-primary-dark:rgb(8, 59, 136);
+
+$color-grey-light:rgb(216, 216, 216);
+$color-grey-dark:rgba(black,.5);
+
+$color-secondary:rgb(255, 149, 66);
+$color-secondary-light:rgb(255, 218, 175);
+$color-secondary-dark:rgb(226, 72, 12);
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    box-sizing:inherit;
+    line-height:1.6;
+    font-weight:400;
+    font-family: "Josefin sans", sans-serif;
+    background-color: $color-grey-light;
+}
+
+html{
+    font-size:62.5%;
+}
+
+
+// .container{
+//     display:grid;
+//     grid-template-rows: 93vh repeat(2, minmax(min-content,100vh)) min-content min-content;
+//     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+//     grid-template-columns: [full-start] repeat(8, minmax(min-content, 1fr) ) [full-end];
+// }

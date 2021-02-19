@@ -1,0 +1,16 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "Glenn's profile",
+  "main": "profile.js",
+  "scripts": {
+    "watch:css": "node-sass SASS/main.scss CSS/style.css -w",
+    "devserver":"live-server",
+    "start":"npm-run-all --parallel watch:css devserver"
+  },
+  "author": "Glenn",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

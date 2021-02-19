@@ -1,0 +1,58 @@
+.skill {
+  // grid-column: full-start / full-end;
+  padding: 5rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-light, 0.5)
+    ),
+    url(../../img/test-3.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 3rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    height: 80%;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(5rem, 1fr));
+    align-content: center;
+    grid-gap: 3rem;
+    justify-items: center;
+  }
+}
+
+.signs {
+  &__name {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.signs__icon.icon {
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  transition: all .2s;
+  &:hover{
+    transform:scale(1.2);
+  }
+}
+
+.skill__heading.heading-1 {
+  color: #000;
+  @include moveIn("Skills");
+}

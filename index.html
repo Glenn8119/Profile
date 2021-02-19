@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <ul class="nav">
+            <li class="nav__item">
+                <a href="#about">
+                    <svg class="nav__icon icon">
+                        <use xlink:href="img/sprite.svg#icon-user-solid-circle"></use>
+                    </svg>
+                    About me
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#skill">
+                    <svg class="nav__icon icon">
+                        <use xlink:href="img/sprite.svg#icon-power"></use>
+                    </svg>
+                    Skill
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#project">
+                    <svg class="nav__icon icon">
+                        <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                    </svg>
+                    Project
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#contact">
+                    <svg class="nav__icon icon">
+                        <use xlink:href="img/sprite.svg#icon-envelop"></use>
+                    </svg>
+                    Contact me
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="intro" id="about">
+            <h1 class="intro__heading heading heading-1">
+                About Me
+            </h1>
+            <div class="intro__box">
+                <img src="img/selfie.jpg" alt="selfie" class="intro__box--img">
+                <div class="intro__box--text">
+                    <p>Glenn Chen</p>
+                    Hi, I'm Glenn!
+                    I majored in psychology before in college, but after that I found that I'm more interested in coding. That's the reason why I started to learn coding by myself, and it helps me imporve my problem solving skills!<br>
+                    I'm now a front-end developer familiar with HTML, CSS, Bootstrap, SASS, Javascript, Reactjs, and look forward to working with you!                    
+                </div>
+            </div>
+    </section>
+    <section class="skill" id="skill">
+        <h3 class="skill__heading heading heading-1">
+            Skills
+        </h3>
+        <div class="skill__container">
+            <div class="signs">
+                <svg class="signs__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-html5"></use>
+                </svg>
+                <p class="signs__name">HTML</p>
+            </div>
+            <div class="signs">
+                <svg class="signs__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-css3"></use>
+                </svg>
+                <p class="signs__name">CSS</p>
+            </div>
+            <div class="signs">
+                <svg class="signs__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-javascript"></use>
+                </svg>
+                <p class="signs__name">Javascript</p>
+            </div>
+            <div class="signs">
+                <svg class="signs__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-bootstrap"></use>
+                </svg>
+                <p class="signs__name">bootstrap</p>
+            </div>
+            <div class="signs">
+                <svg class="signs__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-sass"></use>
+                </svg>
+                <p class="signs__name">sass</p>
+            </div>
+            <div class="signs">
+                <svg class="signs__icon icon">
+                    <use xlink:href="img/sprite.svg#icon-react"></use>
+                </svg>
+                <p class="signs__name">react</p>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="project">
+        <p class="project__heading heading heading-1">
+            Project
+        </p>
+        <div class="columns">
+            <div class="column-1 column">
+                <div class="column__pic column__pic-1"></div>
+                <div class="column__description">
+                    <div class="column__description-text">Project1</div>
+                    <a href="https://xenodochial-villani-dfb2be.netlify.app/" class="column__description-btn">Take a
+                        look &rarr;</a>
+
+                </div>
+            </div>
+            <div class="column-2 column">
+                <div class="column__pic column__pic-2"></div>
+                <div class="column__description">
+                    <div class="column__description-text">Recipe</div>
+                    <a href="https://practical-pare-ecba46.netlify.app/" target=_blank
+                        class="column__description-btn">Take a look &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact__container">
+            <p class="contact__heading heading-2 heading ">Contact me</p>
+            <form class="form">
+                <div class="form__group--1">
+                    <input type="text" class="form__input" id="input" placeholder="Name" required>
+                    <label for="input" class="form__label--name">Name</label>
+                </div>
+                <div class="form__group--2">
+                    <input type="email" class="form__input" id="email" placeholder="Email" required>
+                    <label for="email" class="form__label--email">Email</label>
+                </div>
+                <div class="form__group--3">
+                    <label for="message" class="form__label--message">Message</label>
+                    <textarea id="message" class="form__message" rows="10" required></textarea>
+                </div>
+                <button class="form__btn">Submit</button>
+                <div class="form__socialbox">
+                    <a href="https://www.facebook.com/profile.php?id=100002582555256" target=_blank>
+                        <svg class="form__icon icon">
+                            <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/glenn_81119/" target=_blank>
+                        <svg class="form__icon icon">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Glenn8119" target=_blank>
+                        <svg class="form__icon icon">
+                            <use xlink:href="img/sprite.svg#icon-github"></use>
+                        </svg>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        Copyright &copy; by Glenn Chen | 2021
+    </footer>
+
+
+</body>
+
+</html>
