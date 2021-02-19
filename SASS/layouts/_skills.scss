@@ -3,8 +3,8 @@
   padding: 5rem 0;
   background-image: linear-gradient(
       to right,
-      rgba($color-primary-light, 0.5),
-      rgba($color-primary-light, 0.5)
+      rgba(#000, 0.6),
+      rgba(#000, 0.6)
     ),
     url(../../img/test-3.jpg);
   background-size: cover;
@@ -38,6 +38,7 @@
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
+    color:#fff;
   }
 }
 
@@ -53,6 +54,6 @@
 }
 
 .skill__heading.heading-1 {
-  color: #000;
+  color: #fff;
   @include moveIn("Skills");
 }
