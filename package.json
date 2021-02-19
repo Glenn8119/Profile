@@ -5,12 +5,21 @@
   "main": "profile.js",
   "scripts": {
     "watch:css": "node-sass SASS/main.scss CSS/style.css -w",
-    "devserver":"live-server",
-    "start":"npm-run-all --parallel watch:css devserver"
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel watch:css devserver",
+    "compile:sass": "node-sass SASS/main.scss CSS/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" CSS/style.comp.css -o CSS/style.prefix.css",
+    "compress:css": "node-sass CSS/style.prefix.css CSS/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "Glenn",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^5.0.0"
-  }
+    "autoprefixer": "^10.2.4",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {}
 }
