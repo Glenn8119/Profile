@@ -8,24 +8,31 @@
     url(../../img/bg-1.jpg);
   background-size: cover;
   background-position: center;
-  height: 94vh;
   display: flex;
   align-items: center;
+  height: 90vh;
   &__container {
-
     width: 45%;
     height: 90%;
     padding: 0 2rem;
     border-radius: 10px;
-    margin-left:5rem;
+    margin-left: 5rem;
     background-color: $color-grey-light;
-    box-shadow: 0 2px 5px rgba(#000, .2);
+    box-shadow: 0 2px 5px rgba(#000, 0.2);
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 
+    @media only screen and (max-width: $bp-large) {
+      height: 80%;
+    }
 
+    @media only screen and (max-width: $bp-medium) {
+      height: 70%;
+      width:80%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -39,8 +46,12 @@
   grid-template-rows: repeat(3, min-content);
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
-  margin-top: 2rem;
+
   padding: 0 2rem 2rem 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-gap:2rem;
+  }
 
   &__label--name,
   &__label--email,
@@ -104,10 +115,9 @@
   &__btn {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-    justify-self: start;
 
     width: 13rem;
-    height:4rem;
+    height: 4rem;
     font-size: 2rem;
     background-color: $color-secondary;
     color: #fff;
@@ -116,7 +126,7 @@
     border-radius: 100px;
     padding: 1rem;
     transition: all 0.1s;
-    cursor:pointer;
+    cursor: pointer;
 
     &:hover {
       transform: translateY(-5px);
@@ -127,25 +137,27 @@
       transform: translateY(-2px);
       box-shadow: 0 1px 3px rgba(#000, 0.6);
     }
-
-
   }
 
-  &__socialbox{
+  &__socialbox {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
-    a:not(:last-child){
-        margin-right:1rem;
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+    //讓icon上下置中
+    a {
+      display: flex;
     }
   }
 
-  &__icon.icon{
-      width:3rem;
-      height:3rem;
-      fill:$color-primary;
+  &__icon.icon {
+    width: 3rem;
+    height: 3rem;
+    fill: $color-primary;
   }
 }

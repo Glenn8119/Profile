@@ -1,27 +1,28 @@
 .skill {
-  // grid-column: full-start / full-end;
-  padding: 5rem 0;
-  background-image: linear-gradient(
-      to right,
-      rgba(#000, 0.6),
-      rgba(#000, 0.6)
-    ),
+  background-image: linear-gradient(to right, rgba(#000, 0.6), rgba(#000, 0.6)),
     url(../../img/test-3.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 80vh;
+  @media only screen and (max-width: $bp-medium) {
+    height: 70vh;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 60vh;
+  }
 
   &__heading {
     font-family: "Nunito", sans-serif;
-    margin-bottom: 3rem;
     letter-spacing: 2rem;
     text-transform: uppercase;
+    margin-bottom: 5rem;
   }
 
   &__container {
-    height: 80%;
     width: 70%;
     margin: 0 auto;
     display: grid;
@@ -38,7 +39,7 @@
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    color:#fff;
+    color: #fff;
   }
 }
 
@@ -47,9 +48,9 @@
   height: 10rem;
   display: block;
   margin: 0 auto 1.5rem auto;
-  transition: all .2s;
-  &:hover{
-    transform:scale(1.2);
+  transition: all 0.2s;
+  &:hover {
+    transform: scale(1.2);
   }
 }
 

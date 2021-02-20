@@ -10,6 +10,11 @@ $color-secondary:rgb(255, 149, 66);
 $color-secondary-light:rgb(255, 218, 175);
 $color-secondary-dark:rgb(226, 72, 12);
 
+//BREAK POINT
+$bp-large : 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small:37.5em;
+
 *,
 *::before,
 *::after{
@@ -27,13 +32,22 @@ body{
 }
 
 html{
+    //1rem = 10px
     font-size:62.5%;
+
+    //1rem = 8px
+    @media only screen and (max-width:$bp-large) {
+        font-size:50%;
+    }
+
+    //1rem = 6px
+    @media only screen and (max-width:$bp-medium) {
+        font-size:37.5%;
+    }
+    
+    //1rem = 5px
+    @media only screen and (max-width:$bp-small) {
+        font-size:31.25%;
+    }
 }
 
-
-// .container{
-//     display:grid;
-//     grid-template-rows: 93vh repeat(2, minmax(min-content,100vh)) min-content min-content;
-//     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-//     grid-template-columns: [full-start] repeat(8, minmax(min-content, 1fr) ) [full-end];
-// }
