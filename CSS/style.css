@@ -262,10 +262,14 @@ html {
     @media only screen and (max-width: 37.5em) {
       .nav__item a:link,
       .nav__item a:visited {
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
   .nav__icon {
     margin-right: 1.5rem;
     line-height: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__icon {
+        width: 2rem;
+        height: 2rem; } }
 
 .project {
   background-color: rgba(0, 0, 0, 0.616);
@@ -302,7 +306,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     .column-1,
     .column-2 {
-      height: 100%;
       width: 40%; } }
   @media only screen and (max-width: 37.5em) {
     .column-1,
@@ -436,6 +439,10 @@ html {
   transition: all 0.2s; }
   .signs__icon.icon:hover {
     transform: scale(1.2); }
+  @media only screen and (max-width: 37.5em) {
+    .signs__icon.icon {
+      width: 8rem;
+      height: 8rem; } }
 
 .skill__heading.heading-1 {
   color: #fff;

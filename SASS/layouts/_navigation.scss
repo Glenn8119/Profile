@@ -55,7 +55,7 @@
       }
 
       @media only screen and (max-width: $bp-small) {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
     }
   }
@@ -63,5 +63,10 @@
   &__icon {
     margin-right: 1.5rem;
     line-height: 0;
+
+    @media only screen and (max-width: $bp-small) {
+      width:2rem;
+      height:2rem;
+    }
   }
 }

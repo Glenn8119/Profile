@@ -52,6 +52,11 @@
   &:hover {
     transform: scale(1.2);
   }
+
+  @media only screen and (max-width: $bp-small) {
+    width:8rem;
+    height:8rem;
+  }
 }
 
 .skill__heading.heading-1 {
