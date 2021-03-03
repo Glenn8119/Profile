@@ -2,14 +2,14 @@
   //   grid-column: full-start / full-end;
   background-image: linear-gradient(
       to right,
-      rgba($color-grey-light, 0.4),
-      rgba($color-grey-light, 0.4)
+      rgba($color-grey-dark, 0.4),
+      rgba($color-grey-dark, 0.4)
     ),
     url(../../img/bg-1.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
+  align-items: center;  
   height: 90vh;
   &__container {
     width: 45%;
@@ -17,7 +17,7 @@
     padding: 0 2rem;
     border-radius: 10px;
     margin-left: 5rem;
-    background-color: $color-grey-light;
+    background-color: $color-grey-dark;
     box-shadow: 0 2px 5px rgba(#000, 0.2);
 
     display: flex;
@@ -39,6 +39,7 @@
 .contact__heading.heading {
   align-self: center;
   @include moveIn("Contact me");
+  color:white;
   @media only screen and (max-width: $bp-medium) {
     font-size:8rem;
   }
@@ -68,10 +69,13 @@
   &__label--name,
   &__label--email {
     transition: all 0.2s;
+    color:$color-secondary;
+    margin-top:1rem;
   }
 
   &__label--message {
     margin: 1rem;
+    color:white;
   }
 
   &__input {

@@ -59,9 +59,9 @@
     transition: all 0.3s;
 
     &-1 {
-      background-image: url(../../img/project-1.PNG);
+      background-image: url(../../img/project-1.JPG);
       background-position: center;
-      @include afterEffect("HTML \A CSS", url(../../img/project-1.PNG));
+      @include afterEffect("HTML \A CSS \A Javascript", url(../../img/project-1.JPG));
     }
     &-2 {
       background-image: url(../../img/project-2.JPG);
