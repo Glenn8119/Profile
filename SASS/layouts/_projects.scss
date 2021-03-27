@@ -31,10 +31,11 @@
 }
 
 .column-1,
-.column-2 {
+.column-2,
+.column-3{
   background-color: $color-secondary-light;
   height: 80%;
-  width: 30%;
+  width: 25%;
   border-radius: 3px;
   box-shadow: 0 1rem 3rem rgba(black, 0.2);
 
@@ -66,6 +67,10 @@
     &-2 {
       background-image: url(../../img/project-2.JPG);
       @include afterEffect("HTML CSS \A Reactjs \A Bootstrap", url(../../img/project-2.JPG));
+    }
+    &-3 {
+      background-image: url(../../img/project-3.JPG);
+      @include afterEffect("HTML CSS \A Reactjs \A Redux", url(../../img/project-3.JPG));
     }
   }
 
